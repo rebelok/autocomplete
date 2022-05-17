@@ -1,0 +1,32 @@
+.list-box {
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 0;
+  position: absolute;
+  list-style: none;
+  background-color: #fff;
+  overflow: auto;
+  max-height: 250px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  top: 32px;
+}
+
+.list-box__item {
+  padding: 5px 12px;
+  cursor: pointer;
+
+  &--hovered {
+    background-color: #eee;
+  }
+
+  &--selected {
+    font-weight: bold;
+  }
+
+  &--empty {
+    color: #666;
+    cursor: default;
+  }
+}
